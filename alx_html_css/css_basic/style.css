@@ -1,0 +1,40 @@
+/* Step 1: Set <body> as a flex container with column layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Step 2: Header and footer styles (optional, for clarity) */
+header,
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Step 3: Set <main> as a flex container with row layout */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Let it grow and fill available space */
+}
+
+/* Step 4: Let <article> take 2/3 and be scrollable */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Step 5: Let <aside> take 1/3 and be scrollable */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
