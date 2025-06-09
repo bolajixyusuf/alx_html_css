@@ -1,13 +1,11 @@
-/* Step 1: Set <body> as a flex container with column layout */
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Step 2: Header and footer styles (optional, for clarity) */
 header,
 footer {
   background-color: #f0f0f0;
@@ -16,14 +14,12 @@ footer {
   font-weight: bold;
 }
 
-/* Step 3: Set <main> as a flex container with row layout */
 main {
   display: flex;
   flex-direction: row;
-  flex: auto; /* Let it grow and fill available space */
+  flex: auto;
 }
 
-/* Step 4: Let <article> take 2/3 and be scrollable */
 article {
   flex: 2;
   overflow-y: auto;
@@ -31,10 +27,59 @@ article {
   background-color: #fff;
 }
 
-/* Step 5: Let <aside> take 1/3 and be scrollable */
 aside {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
   background-color: #f9f9f9;
+}
+
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #004080;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+header li {
+  color: white;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+article {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+aside {
+  padding: 1rem;
+  background-color: #e9f0f8;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #004080;
+  color: white;
+  margin-top: 1rem;
 }
